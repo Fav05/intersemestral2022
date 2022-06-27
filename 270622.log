@@ -1,0 +1,209 @@
+    1  ls
+    2  cd TAREAS
+    3  ls
+    4  ls NOTEBOOKS
+    5  cp NOTEBOOKS
+    6  cp NOTEBOOKS/HERRAMIENTAS_1.ipynb
+    7  ls
+    8  cp NOTEBOOKS/lista.dat .
+    9  cp NOTEBOOKS/
+   10  man sort
+   11  head lista.dat
+   12  ls -lart
+   13  mkdir FAV
+   14  ls
+   15  cd FAV
+   16  ls
+   17  ln -s ../../NOTEBOOKS/lista.dat .
+   18  ls
+   19  cd ..
+   20  ls
+   21  find . -name lista.dat
+   22  find . -name lista.dat |wc-l
+   23  find . -name lista.dat |wc -l
+   24  ln -s ../../NOTEBOOKS/des_estaciones.dat .
+   25  less des_estaciones.dat
+   26  cd FAV
+   27  ln -s ../../NOTEBOOKS/des_estaciones.dat .
+   28  less des_estaciones.dat
+   29  ls
+   30  cp -r ../NOTEBOOKS .
+   31  EXIT
+   32  exit
+   33  date
+   34  nproc 
+   35  lscpu 
+   36  nvidia-smi 
+   37  free 
+   38  free -g
+   39  date
+   40  man sort
+   41  cd TAREAS
+   42  cd FAV
+   43  LS
+   44  ls
+   45  cd ..
+   46  find -name Herra
+   47  pwd
+   48  cd TAREAS
+   49  cd FAV
+   50  ls
+   51  cd TEST
+   52  ls
+   53  cd SUBT
+   54  ls
+   55  cd fav
+   56  cd test
+   57  cd ..
+   58  rm SUBT
+   59  rmdir TEST
+   60  cd TEST
+   61  rm
+   62  rm SUBT
+   63  rmdir SUBT
+   64  ls
+   65  cd ..
+   66  rmdir TEST
+   67  ls
+   68  man dir
+   69  ls 
+   70  ls -l
+   71  dir -l
+   72  ls -l
+   73  ls
+   74  cd NUEVO
+   75  LS
+   76  ls
+   77  cd ..
+   78  ls -R
+   79  head -1 covidM.csv 
+   80  head -1 covidM.csv |tr "," "\n" > columna01
+   81  grep Guadalajara covidM.csv | tr "," "\n" > columna02
+   82  head columna02
+   83  wc -l columna0?
+   84  more columna01
+   85  more columna02
+   86  paste columna01 columna02 test1
+   87  paste columna01 columna02 > test1
+   88  less test1
+   89  vi test1
+   90  ls
+   91  tar -cvf ejemplo.tar *.txt
+   92  ls -rtl *tar
+   93  ls -rthl *tar
+   94  cat columna01 >>test2
+   95  cat columna02 >>test2
+   96  ll covidM.csv 
+   97  alias ls="ls -l"
+   98  unalias ls
+   99  alias ll="ls -lh"
+  100  ll covidM.csv
+  101  echo $PSI
+  102  echo $PS1
+  103  PSI="Nueva orden"
+  104  PS1="Nueva orden"
+  105  ls
+  106  cd..
+  107  cd ..
+  108  ls
+  109  exit
+  110  ls
+  111  vim covidM.csv
+  112  ls
+  113  vim Casos_Diarios_Municipio_Confirmados_20220614.csv 
+  114  pwd
+  115  ls /
+  116  ls -F
+  117  ls -F /
+  118  ls -F /etc/
+  119  cat /etc/os-release 
+  120  #cat /etc/os-release  | vim -
+  121  vim /etc/os-release
+  122  cat /etc/os-release  | vim -
+  123  wc -l Casos_Diarios_Municipio_Confirmados_20220614.csv 
+  124  wc -l 
+  125  grep -i miguel Casos_Diarios_Municipio_Confirmados_20220614.csv | vim - 
+  126  grep -i miguel Casos_Diarios_Municipio_Confirmados_20220614.csv > mun-miguel
+  127  vim mun-miguel
+  128  grep -i hidalgo Casos_Diarios_Municipio_Confirmados_20220614.csv | vim -
+  129  passwd
+  130  ps ax | wc
+  131  ps ax | wc -l
+  132  tmux
+  133  tmux a
+  134  exit
+  135  man grep
+  136  exit
+  137  tmux ls
+  138  exit
+  139  man ls
+  140  tmux ls
+  141  tmux a
+  142  vim Casos_Diarios_Municipio_Confirmados_20220614.csv 
+  143  exit
+  144  exit
+  145  head -1 Casos_Diarios_Municipio_Confirmados_20220614.csv 
+  146  tmux ls
+  147  exit
+  148  man ls
+  149  tmux ls
+  150  exit
+  151  vim Casos_Diarios_Municipio_Confirmados_20220614.csv 
+  152  ls -a
+  153  rm .Casos_Diarios_Municipio_Confirmados_20220614.csv.swp 
+  154  tmux ls
+  155  tmux a
+  156  tmux ls
+  157  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+  158  export PAGER=cat
+  159  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+  160  head -1 covidM.csv | tr "," "\n" > col01
+  161  grep Guadalajara covidM.csv | tr "," "\n" > col02
+  162  wc -l col0?
+  163  paste col01 col02 > comCol #combinar dos archivos
+  164  head comCol
+  165  echo $?
+  166  # TAR 
+  167  Se usa para pegar un archivo después de otro
+  168  Para ordenar un archivo después de otro se utiliza >>
+  169  echo $?
+  170  cat columna01 > test2
+  171  cat columna02 >> test2
+  172  head test2 # observar el resultado
+  173  wc -l test 2
+  174  echo $?
+  175  gunzip ejemplo.tar #descomprimir
+  176  bzip2 ejemplo.txt #comprimir
+  177  bunzip2 ejemplo.txt.bzip #descomprimir
+  178  echo $?
+  179  #Variable de entorno
+  180  Para ver la variable de entorno se ejecuta la siguiente orden:
+  181  echo $?
+  182  echo $PS2
+  183  echo $?
+  184  # DIFF 
+  185  Se usa para identificar las diferencias entre archivos.
+  186  vimdiff para identificar las diferencias en vim, es más amigable.
+  187  pwd
+  188  tmux ls
+  189  tmux
+  190  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+  191  export PAGER=cat
+  192  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+  193  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+  194  export PAGER=cat
+  195  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+  196  cd TAREAS
+  197  cd FAV
+  198  cd repositorio
+  199  git log --oneline
+  200  ls -l
+  201  ls ..
+  202  cp ../col01
+  203  cp ../col01 .
+  204  git status
+  205  git add col01
+  206  git status
+  207  git commit -m "se agrega col01"
+  208  history 270622_1033.log
+  209  history > 270622.log
